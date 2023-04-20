@@ -23,5 +23,5 @@ sudo apt-get install gfortran-7
 ```
 5. check the libgfortran.so.4 in **/lib/x86-64-linux-gnu**
 ```
-ccd /lib/x86_64-linux-gnu/
+cd /lib/x86_64-linux-gnu/
 ```
