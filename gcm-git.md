@@ -14,5 +14,5 @@ git push
 3. add PATH in ~/.bashrc
 ```
 # add PATH git
-export PATH="/home/ben/.bin:$PATH"
+export PATH="~/.bin:$PATH"
 ```
