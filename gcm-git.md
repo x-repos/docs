@@ -2,7 +2,7 @@
 1. create the **gcm bash** file at ~/.bin
 ```
 mkdir ~/.bin
-vi ~/.bin.gcm
+vi ~/.bin/gcm
 ```
 2. add git command
 ```
