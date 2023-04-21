@@ -5,11 +5,17 @@
 ```
 sudo tar -zxvf cps[NAME].tar -C /usr/local/
 ```
-3. edit .bashrc
+3. make sure you have gfortran and gcc
+4. setup
+```
+sudo ./Setup LINUX6440
+sudo ./C
+```
+5. edit .bashrc
 ```
 vi ~/.bashrc
 ```
-4. add PATH
+6. add PATH
 ```
 # add PATH cps - Computer Programs in Seismology
 export PATH="usr/local/PROGRAMS.330/bin:$PATH"
