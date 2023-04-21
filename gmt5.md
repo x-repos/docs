@@ -3,3 +3,12 @@
 ```
 sudo apt install subversion ghostscript build-essential cmake libnetcdf-dev libfftw3-dev libpcre3-dev libgdal-dev gdal-bin
 ```
+2. install gmt
+```
+sudo apt install gmt
+```
+3. install evince
+```
+sudo apt install evince
+```
+
