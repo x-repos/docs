@@ -2,7 +2,7 @@
 
 to install **libgfortran.so.4**, you must install **gfortran7**
 
-1. add apt repository manually
+1. add an additional archive sudo apt-get
 ```
 cd /etc/apt/sources.list.d/
 sudo vi ubuntu-toolchain-r-ubuntu-test-jammy.list
