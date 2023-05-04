@@ -13,6 +13,8 @@ git push
 ```
 3. add PATH in ~/.bashrc
 ```
+vi ~/.bashrc
+
 # add PATH git
 export PATH="~/.bin:$PATH"
 ```
