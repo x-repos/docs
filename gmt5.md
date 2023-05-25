@@ -11,4 +11,8 @@ sudo apt install gmt
 ```
 sudo apt install evince
 ```
+4. install xdg-open
+```
+sudo apt install xdg-utils
+```
 
