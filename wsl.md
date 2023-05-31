@@ -8,3 +8,8 @@
 3. VSCode on **Windows not Linux** then install
 - WSL
 - Remote Development to open VSCode from Linux terminal
+4. install nautilus
+5. install gnome-session
+```
+https://gist.github.com/Ta180m/e1471413f62e3ed94e72001d42e77e22
+```
