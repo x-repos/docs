@@ -3,6 +3,7 @@
 ```
 mkdir ~/.bin
 vi ~/.bin/gcm
+chmod 777 ~/.bin/gcm
 ```
 2. add git command
 ```
