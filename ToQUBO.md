@@ -38,6 +38,9 @@
     ```julia
     using Pkg
     Pkg.add("CondaPkg")
+    using CondaPkg
+    ] conda add your_package
+    ] conda pip_add your_package
     ```
 7. **Navigate to Your Directory in Julia**: To work with local packages in Julia, navigate to your desired directory by executing the following command in Julia REPL, replacing `"path/to/your/directory"` with the path to your directory containing the package. Ensure that the parent folder includes the `your_package.jl` folder.
 
