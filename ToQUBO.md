@@ -43,6 +43,7 @@
 
     ```julia
     cd("path/to/your/directory")
+    using yourpackage
     ```
 
 Follow these steps to successfully install ToQUBO and its dependencies.
