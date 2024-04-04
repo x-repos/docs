@@ -39,5 +39,10 @@
     using Pkg
     Pkg.add("CondaPkg")
     ```
+7. **Navigate to Your Directory in Julia**: To work with local packages in Julia, navigate to your desired directory by executing the following command in Julia REPL, replacing `"path/to/your/directory"` with the path to your directory containing the package. Ensure that the parent folder includes the `package.jl` file.
+
+    ```julia
+    cd("path/to/your/directory")
+    ```
 
 Follow these steps to successfully install ToQUBO and its dependencies.
