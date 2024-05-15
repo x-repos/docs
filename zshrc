@@ -1,5 +1,26 @@
 # My Setup
 
+
+
+export DWAVE_API_TOKEN="DEV-72618f90ea92ed99c2bd9adff8bc3fc1aaff6600"
+
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+case ":$PATH:" in
+    *:/Users/ben/.juliaup/bin:*)
+        ;;
+
+    *)
+        export PATH=/Users/ben/.juliaup/bin${PATH:+:${PATH}}
+        ;;
+esac
+
+# <<< juliaup initialize <<<
+
+
 # Color promt
 # cd /Users/ben/Workplace
 autoload -U colors && colors
@@ -34,3 +55,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/ben/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
