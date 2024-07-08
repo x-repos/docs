@@ -6,7 +6,7 @@
 
 2. **Create a USB boot**
    
-   Download [TransMac for Windows](https://www.acutesystems.com/scrtm.htm)
-   Download [.dmg files](xx)
+   - Download [TransMac for Windows](https://www.acutesystems.com/scrtm.htm)
+   - Download [.dmg files](xx)
 
 4. 
