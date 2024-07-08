@@ -7,7 +7,7 @@
 2. **Create a USB boot**
    
    - Install [TransMac for Windows](https://www.acutesystems.com/scrtm.htm)
-   - Download installation [.dmg files](xx) (similar to ISO files on Windows)
+   - Download Sierra 10.12 installation [.dmg files online](https://archive.org/details/macOS-X-images) (similar to ISO files on Windows) or at [OneDrive](https://mines0-my.sharepoint.com/:f:/g/personal/hoanganh_nguyen_mines_edu/EslCdlfHv1tApLZ69I6gPtMBhMkAMYnaX80XxOxTFDpheQ?e=fJCAsu)
    - Create the boot USB ([Youtube](https://www.youtube.com/watch?v=TRPF_FZNwko&ab_channel=TechyDruid))
 
 3. 
