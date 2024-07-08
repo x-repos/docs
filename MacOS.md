@@ -8,5 +8,6 @@
    
    - Download [TransMac for Windows](https://www.acutesystems.com/scrtm.htm)
    - Download [.dmg files](xx)
+   - Create the empty USB ([Youtube](https://www.youtube.com/watch?v=TRPF_FZNwko&ab_channel=TechyDruid))
 
 4. 
