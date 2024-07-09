@@ -18,7 +18,6 @@
    -
    -
    -
-   
 8. **Install packages**
    - Update terminal
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
