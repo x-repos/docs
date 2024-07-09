@@ -15,14 +15,14 @@
 4. **Update MacOS version to Ventura in Appstore**
 5. **Enable zsh**
 6. **Add Color Promt**
-   '''
+   ```
    # Color Promt
    autoload -U colors && colors
    PS1="%B%{$fg[green]%}%~ %B%{$reset_color%}%% "
    alias ls='ls -G'
    export CLICOLOR=1 
    export LSCOLORS=GxBxhxDxfxhxhxhxhxGxGx
-   '''
+   ```
 8. **Install packages**
    - Update terminal
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
