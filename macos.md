@@ -15,9 +15,9 @@
 4. **Update MacOS version to Ventura in Appstore**
 5. **Enable zsh**
 6. **Add Color Promt**
-   -
-   -
-   -
+   - x
+   - x
+   - x
 7. **Install packages**
    - Update terminal
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
