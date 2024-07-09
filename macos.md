@@ -28,7 +28,8 @@
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
 8. **Install [Fira Code](https://github.com/tonsky/FiraCode?tab=readme-ov-file) font**
 9. **Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download *.pkg* file for MacOS**
-10. **Install [GIT] command**
+10. Generate [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to GIT
+11. **Install [GIT] command**
     - Create the gcm file
     ```
     mkdir ~/.bin
