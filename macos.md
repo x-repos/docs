@@ -14,7 +14,7 @@
    Turn on IMac, hold "option" to boot and install
 4. **Update MacOS version to Ventura in Appstore**
 5. **Enable zsh**
-6. **Add Color Promt**
+6. **Add Color [Promt](https://stackoverflow.com/questions/689765/how-can-i-change-the-color-of-my-prompt-in-zsh-different-from-normal-text)**
    ```
    # Color Promt
    autoload -U colors && colors
