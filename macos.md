@@ -16,3 +16,6 @@
 6. **Install packages**
    - Update terminal
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
+7. Install Fira Code family font
+8. Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download **.pkg** file for MacOS
+9. 
