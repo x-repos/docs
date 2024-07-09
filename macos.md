@@ -23,9 +23,25 @@
    export CLICOLOR=1 
    export LSCOLORS=GxBxhxDxfxhxhxhxhxGxGx
    ```
-8. **Install packages**
+7. **Install packages**
    - Update terminal
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
-9. **Install [Fira Code](https://github.com/tonsky/FiraCode?tab=readme-ov-file) font**
-10. **Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download *.pkg* file for MacOS**
-11. 
+8. **Install [Fira Code](https://github.com/tonsky/FiraCode?tab=readme-ov-file) font**
+9. **Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download *.pkg* file for MacOS**
+10. **Install [GIT] command**
+    - Create the gcm file
+    ```
+    mkdir ~/.bin
+    chmod 777 ~/.bin/gcm
+    ```
+    - Add lines to gcm
+    ```
+    git add .
+    git commit -m "Auto Commit"
+    git push
+    ```
+    - Add PATH
+    ```
+    # add PATH git
+    export PATH=~/.bin:$PATH
+    ```
