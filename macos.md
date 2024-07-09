@@ -46,4 +46,6 @@
     # add PATH git
     export PATH=~/.bin:$PATH
     ```
-12. **[Dwave Token](https://cloud.dwavesys.com/leap/)**
+12. **Dwave**
+    - [Dwave Ocean Installation](https://docs.ocean.dwavesys.com/en/stable/overview/install.html)
+    - [Dwave Token](https://cloud.dwavesys.com/leap/)
