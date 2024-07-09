@@ -49,7 +49,8 @@
 12. **Dwave**
     - [Dwave Ocean Installation](https://docs.ocean.dwavesys.com/en/stable/overview/install.html)
     - Add PATH
-    - ```
-      dsfasdfasdf
-      ```
+    ```
+    # Dwave Token
+    export DWAVE_API_TOKEN="DEV-108cfb55739c25318a509bd4cbfbb5519903da9e"
+    ```
     - [Dwave Token](https://cloud.dwavesys.com/leap/)
