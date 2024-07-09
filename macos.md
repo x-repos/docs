@@ -16,7 +16,10 @@
    Turn on IMac, hold "option" to boot and install
 4. **Update MacOS version to Ventura in Appstore**
 5. **Enable zsh**
-6. **Add Color [Promt](https://stackoverflow.com/questions/689765/how-can-i-change-the-color-of-my-prompt-in-zsh-different-from-normal-text)**
+6. **Terminal Customization**
+   - Font: 14
+   - Size: 80x30 
+8. **Add Color [Promt](https://stackoverflow.com/questions/689765/how-can-i-change-the-color-of-my-prompt-in-zsh-different-from-normal-text)**
    ```
    # Color Promt
    autoload -U colors && colors
@@ -25,13 +28,13 @@
    export CLICOLOR=1 
    export LSCOLORS=GxBxhxDxfxhxhxhxhxGxGx
    ```
-7. **Packages**
+9. **Packages**
    - Update terminal
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
-8. **Install [Fira Code](https://github.com/tonsky/FiraCode?tab=readme-ov-file) font**
-9. **Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download *.pkg* file for MacOS**
-10. [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [Adding key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to GIT
-11. **GIT command**
+10. **Install [Fira Code](https://github.com/tonsky/FiraCode?tab=readme-ov-file) font**
+11. **Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download *.pkg* file for MacOS**
+12. [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [Adding key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to GIT
+13. **GIT command**
     - Create the gcm file
     ```
     mkdir ~/.bin
@@ -48,7 +51,7 @@
     # add PATH git
     export PATH=~/.bin:$PATH
     ```
-12. **Dwave**
+14. **Dwave**
     - [Dwave Token](https://cloud.dwavesys.com/leap/)
     - [Dwave Ocean Installation](https://docs.ocean.dwavesys.com/en/stable/overview/install.html)
     - Add PATH
