@@ -4,7 +4,7 @@
 
    Follow links: [Youtube](https://www.youtube.com/watch?v=kHDiYDO6v2w&ab_channel=N%C4%81gaYanamandala) or [Article](https://www.tech-otaku.com/mac/secure-erasing-mac-fusion-drive/)
 
-2. **Create a USB boot**
+2. **USB boot**
    
    - Install [TransMac for Windows](https://www.acutesystems.com/scrtm.htm)
    - Download Sierra 10.12 installation .dmg files [online](https://archive.org/details/macOS-X-images) or you can find at local SAMSUNG SSD 4TB
@@ -23,13 +23,13 @@
    export CLICOLOR=1 
    export LSCOLORS=GxBxhxDxfxhxhxhxhxGxGx
    ```
-7. **Install packages**
+7. **Packages**
    - Update terminal
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
 8. **Install [Fira Code](https://github.com/tonsky/FiraCode?tab=readme-ov-file) font**
 9. **Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download *.pkg* file for MacOS**
-10. Generate [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to GIT
-11. **Install [GIT] command**
+10. [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [Adding key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) to GIT
+11. **GIT command**
     - Create the gcm file
     ```
     mkdir ~/.bin
