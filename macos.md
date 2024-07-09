@@ -15,3 +15,4 @@
 5. **Update MacOS version to Monterey**
 6. **Install packages**
    - Update terminal
+   - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
