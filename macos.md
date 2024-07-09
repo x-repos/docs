@@ -47,10 +47,17 @@
     export PATH=~/.bin:$PATH
     ```
 12. **Dwave**
+    - [Dwave Token](https://cloud.dwavesys.com/leap/)
     - [Dwave Ocean Installation](https://docs.ocean.dwavesys.com/en/stable/overview/install.html)
     - Add PATH
     ```
     # Dwave Token
     export DWAVE_API_TOKEN="DEV-108cfb55739c25318a509bd4cbfbb5519903da9e"
     ```
-    - [Dwave Token](https://cloud.dwavesys.com/leap/)
+    - Login from local computer
+    ```
+    dwave auth login
+    ---
+    Authorization completed successfully. You can now use "dwave auth get" to fetch your token.
+    ```
+
