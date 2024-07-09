@@ -12,15 +12,15 @@
 
 3. **Boot**
    Turn on IMac, hold "option" to boot and install
-5. **Update MacOS version to Ventura in Appstore**
-6. **Enable zsh**
-7. **Add Color Promt**
+4. **Update MacOS version to Ventura in Appstore**
+5. **Enable zsh**
+6. **Add Color Promt**
    -
    -
    -
-8. **Install packages**
+7. **Install packages**
    - Update terminal
    - Linear mouse: Scrolling 0.75 - 18. Pointer 1.5 - 0.1
-9. **Install Fira Code family font**
-10. **Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download *.pkg* file for MacOS**
-11. 
+8. **Install Fira Code family font**
+9. **Install [Miniconda](https://docs.anaconda.com/miniconda/#quick-command-line-install): Download *.pkg* file for MacOS**
+10. 
