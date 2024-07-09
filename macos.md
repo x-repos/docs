@@ -48,4 +48,8 @@
     ```
 12. **Dwave**
     - [Dwave Ocean Installation](https://docs.ocean.dwavesys.com/en/stable/overview/install.html)
+    - Add PATH
+    - ```
+      dsfasdfasdf
+      ```
     - [Dwave Token](https://cloud.dwavesys.com/leap/)
