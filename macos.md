@@ -9,8 +9,8 @@
    - Install [TransMac for Windows](https://www.acutesystems.com/scrtm.htm)
    - Download Sierra 10.12 installation .dmg files [online](https://archive.org/details/macOS-X-images) or you can find at local SAMSUNG SSD 4TB
    - Create the boot USB ([Youtube](https://www.youtube.com/watch?v=TRPF_FZNwko&ab_channel=TechyDruid)).
-     - - For Sierra, do not extract the .dmg file
-     - - For High Sierra, find the InstallESD.dmg in SharedSupport folder (recommended)
+     - For Sierra, do not extract the .dmg file
+     - For High Sierra, find the InstallESD.dmg in SharedSupport folder (recommended)
 
 3. **Boot**
    Turn on IMac, hold "option" to boot and install
