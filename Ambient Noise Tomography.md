@@ -57,3 +57,4 @@ This markdown is written for Ambient Noise Tomography (ANT) instruction
     - ```1-waveforms``` → ```1-waveforms-raw```
     - Run ```1-mseedcut.py```
     - The data from ```1-waveforms``` folder after runing ```1-mseedcut.py``` will be cut and sorted into ```1-waveform-raw``` folder.
+ - Install noisepy
