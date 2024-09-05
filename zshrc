@@ -1,7 +1,12 @@
 
 #-------------------------------------------------------------------------------------
 alias w='cd ~/Desktop/Workspace/'
-alias ob='conda activate obspy'
+alias fwi='cd ~/Desktop/Workspace/fwi'
+alias j='julia --project=@.'
+# alias obspy='conda activate obspy'
+# alias devito='conda activate devito'
+# alias dwave='conda activate dwave'
+
 
 
 # Open MPI
