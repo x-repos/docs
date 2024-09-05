@@ -1,3 +1,6 @@
+# **libgfotran.so.3**
+follow the [github link](https://gist.github.com/sakethramanujam/faf5b677b6505437dbdd82170ac55322)
+
 # **libgfotran.so.4**
 
 to install **libgfortran.so.4**, you must install **gfortran7**
