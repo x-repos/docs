@@ -1,24 +1,40 @@
+
 #-------------------------------------------------------------------------------------
+alias w='cd ~/Desktop/Workspace/'
+alias ob='conda activate obspy'
+
+
+# Open MPI
+#-------------------------------------------------------------------------------------
+export TMPDIR=/tmp
+
+
+# Gipptools
+#-------------------------------------------------------------------------------------
+export PATH=~/Programs/gipptools-2024.170/bin:$PATH
+
 
 # Dwave Token
-export DWAVE_API_TOKEN="DEV-108cfb55739c25318a509bd4cbfbb5519903da9e"
-
 #-------------------------------------------------------------------------------------
+export DWAVE_API_TOKEN="DEV-5b4f748252e0df3ae4f3e100b4e7eaa2e12a8330"
+
 
 # PATH GIT
+#-------------------------------------------------------------------------------------
 export PATH=~/.bin:$PATH
 
-#-------------------------------------------------------------------------------------
 
 # Color Promt
+#-------------------------------------------------------------------------------------
 autoload -U colors && colors
 PS1="%B%{$fg[green]%}%~ %B%{$reset_color%}%% "
 alias ls='ls -G'
 export CLICOLOR=1 
 export LSCOLORS=GxBxhxDxfxhxhxhxhxGxGx  
 
-#-------------------------------------------------------------------------------------
 
+# Conda
+#-------------------------------------------------------------------------------------
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -34,4 +50,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Julia
 #-------------------------------------------------------------------------------------
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/ben/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
