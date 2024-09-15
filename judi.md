@@ -7,22 +7,26 @@ pip install devito #try
 pip install pyrevolve
 which python
 ```
+## Julia
+```
+sudo apt update
+sudo apt install curl
+cd ~/Download
+curl -fsSL https://install.julialang.org | sh
+```
 ## JUDI
 ```
 ENV["PYTHON"] = "/path/to/your/conda/env/bin/python"
 using Pkg
-Pkg.build("PyCall")
-
-] add JUDI
+Pkg.add("PyCall")
+Pkg.add("PyCall")
 using JUDI
 ```
 
-## PLOTS
+## PLOTS Jupyter notebook
 ```
 using Pkg
 Pkg.add("PlotlyJS")
-
-
 using Plots
 plotlyjs()  # Set the backend to PlotlyJS
 
