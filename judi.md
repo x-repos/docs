@@ -18,8 +18,6 @@ curl -fsSL https://install.julialang.org | sh
 ```
 ENV["PYTHON"] = "/path/to/your/conda/env/bin/python"
 using Pkg
-Pkg.add("PyCall")
-Pkg.add("PyCall")
 using JUDI
 ```
 
