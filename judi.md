@@ -1,4 +1,4 @@
-# Devito
+## Devito
 ```
 conda create -n devito
 conda activate devito
@@ -7,7 +7,7 @@ pip install devito #try
 pip install pyrevolve
 which python
 ```
-# JUDI
+## JUDI
 ```
 ENV["PYTHON"] = "/path/to/your/conda/env/bin/python"
 using Pkg
@@ -17,8 +17,12 @@ Pkg.build("PyCall")
 using JUDI
 ```
 
-# PLOTS
+## PLOTS
 ```
+using Pkg
+Pkg.add("PlotlyJS")
+
+
 using Plots
 plotlyjs()  # Set the backend to PlotlyJS
 
