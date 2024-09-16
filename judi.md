@@ -22,11 +22,10 @@ Pkg.add("PyCall")
 Pkg.add("JUDI")
 ```
 ```
-# Set the Jupyter path to a specific Jupyter executable
-ENV["JUPYTER"] = "/home/x/Programs/miniconda3/envs/devito/bin/jupyter"
-
-# Rebuild IJulia to use the new Jupyter executable
-Pkg.build("IJulia")
+conda activate devito
+conda install jupyter
+using Pkg
+Pkg.add("IJulia")
 ```
 
 ## PLOTS Jupyter notebook
