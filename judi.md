@@ -18,7 +18,15 @@ curl -fsSL https://install.julialang.org | sh
 ```
 ENV["PYTHON"] = "/path/to/your/conda/env/bin/python"
 using Pkg
-using JUDI
+Pkg.add("PyCall")
+Pkg.add("JUDI")
+```
+```
+# Set the Jupyter path to a specific Jupyter executable
+ENV["JUPYTER"] = "/home/x/Programs/miniconda3/envs/devito/bin/jupyter"
+
+# Rebuild IJulia to use the new Jupyter executable
+Pkg.build("IJulia")
 ```
 
 ## PLOTS Jupyter notebook
