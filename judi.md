@@ -31,9 +31,12 @@ Pkg.add("IJulia")
 ## PLOTS Jupyter notebook
 ```
 using Pkg
-Pkg.add("PlotlyJS")
+# Pkg.add("PlotlyJS") # For interactive backend
+# using Plots
+# plotlyjs()  # Set the backend to PlotlyJS
+
 using Plots
-plotlyjs()  # Set the backend to PlotlyJS
+gr() # For non interactive backend
 
 f(x) = exp(-x^2/2)
 
