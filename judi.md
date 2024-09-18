@@ -44,7 +44,7 @@ show() # for calling julia.py from terminal
 ```
 
 ## ENV Activation (Optional)
-```bash
+```shell
 julia --project=@.
 ```
 ---
