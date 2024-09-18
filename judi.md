@@ -39,7 +39,7 @@ using PyPlot
 x = rand(10, 10)
 imshow(x)
 gcf()  # for vscode plots
-show() # for calling julia.py
+show() # for calling julia.py from terminal
 # use nothing for terminal REPL
 ```
 ---
