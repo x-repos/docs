@@ -38,7 +38,9 @@ Pkg.add("JUDI")
 using PyPlot
 x = rand(10, 10)
 imshow(x)
-gcf()  #
+gcf()  # for vscode plots
+show() # for calling julia.py
+# use nothing for terminal REPL
 ```
 ---
 # Julia Environment and Package Management with Pkg
