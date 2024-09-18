@@ -42,6 +42,11 @@ gcf()  # for vscode plots
 show() # for calling julia.py from terminal
 # use nothing for terminal REPL
 ```
+
+## ENV Activation (Optional)
+```bash
+julia --project=@.
+```
 ---
 # Julia Environment and Package Management with Pkg
 
