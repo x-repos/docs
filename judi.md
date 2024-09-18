@@ -40,17 +40,9 @@ Pkg.add("IJulia")
 ```
 
 ## PLOTS Jupyter notebook
-```
-using Pkg
-# Pkg.add("PlotlyJS") # For interactive backend
-# using Plots
-# plotlyjs()  # Set the backend to PlotlyJS
-
-using Plots
-gr() # For non interactive backend
-
-f(x) = exp(-x^2/2)
-
-# Create and display the plot
-plot(f, -3, 3, title="Gaussian Function", xlabel="x", ylabel="f(x)")
+```julia
+using PyPlot
+x = rand(10, 10)
+imshow(x)
+gcf()  #
 ```
