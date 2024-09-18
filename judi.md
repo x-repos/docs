@@ -38,7 +38,7 @@ using Pkg
 Pkg.add("IJulia")
 ```
 
-## PLOTS Jupyter notebook
+## PyPlot
 ```julia
 using PyPlot
 x = rand(10, 10)
