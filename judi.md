@@ -96,6 +96,7 @@ Julia has a built-in package manager called **Pkg** that manages environments, p
 4. **Check the Environment Status:**
     ```julia
     (MyJuliaProject) pkg> status
+    (MyJuliaProject) pkg> st
     ```
 
 5. **Use Packages in Your Script:**
