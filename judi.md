@@ -31,12 +31,6 @@ Pkg.build("PyCall")
 # Install JUDI
 Pkg.add("JUDI")
 ```
-```julia
-conda activate devito
-conda install jupyter
-using Pkg
-Pkg.add("IJulia")
-```
 
 ## PyPlot
 ```julia
