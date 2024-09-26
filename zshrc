@@ -1,8 +1,20 @@
+# Server
+#-------------------------------------------------------------------------------------
+# ssh-copy-id hoanganh_nguyen@magnus.mines.edu 
+alias magnus='ssh hoanganh_nguyen@magnus.mines.edu'
+alias sybil='ssh hoanganh_nguyen@sybil.mines.edu'
 
+
+# alias
 #-------------------------------------------------------------------------------------
 alias w='cd ~/Desktop/Workspace/'
 alias fwi='cd ~/Desktop/Workspace/fwi'
 alias j='julia --project=@.'
+alias t='tree -L 1'
+alias t2='tree -L 2'
+
+
+
 # alias obspy='conda activate obspy'
 # alias devito='conda activate devito'
 # alias dwave='conda activate dwave'
