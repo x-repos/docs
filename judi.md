@@ -20,9 +20,8 @@ curl -fsSL https://install.julialang.org | sh
 # Update python inside julia
 ENV["PYTHON"] = "/path/to/your/conda/env/bin/python"
 # Install JUDI and essential packages
-Pkg.add("JUDI PyPlot DataFrames CSV Plots PyCall")
+Pkg.add("JUDI PyPlot DataFrames CSV Plots PyCall SegyIO HDF5 NLopt")
 # Check python inside julia
-# This will give the path to the Python executable
 println(PyCall.python)
 ```
 
