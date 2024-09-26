@@ -20,7 +20,7 @@ curl -fsSL https://install.julialang.org | sh
 # Update python inside julia
 ENV["PYTHON"] = "/path/to/your/conda/env/bin/python"
 # Install JUDI and dependencies
-Pkg.add("JUDI PyPlot DataFrames")
+Pkg.add("JUDI PyPlot DataFrames CSV")
 ```
 
 ## PyPlot
