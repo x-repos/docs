@@ -17,20 +17,10 @@ curl -fsSL https://install.julialang.org | sh
 ```
 ## JUDI
 ```julia
-# Check current python
-using Pkg
-Pkg.add("PyCall")
-using PyCall
-PyCall.python
-```
-
-```julia
-# Update Python and PyCall env vars
+# Update python inside julia
 ENV["PYTHON"] = "/path/to/your/conda/env/bin/python"
-Pkg.build("PyCall")
-
-# Install JUDI
-Pkg.add("JUDI")
+# Install JUDI and dependencies
+Pkg.add("JUDI PyPlot DataFrames")
 ```
 
 ## PyPlot
