@@ -23,6 +23,8 @@ ENV["PYTHON"] = "/path/to/your/conda/env/bin/python"
 Pkg.add("JUDI PyPlot DataFrames CSV Plots PyCall SegyIO HDF5 NLopt")
 # Check python inside julia
 println(PyCall.python)
+using Pkg
+Pkg.build("PyCall")
 ```
 
 ## PyPlot
