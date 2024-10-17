@@ -12,7 +12,7 @@ git add .
 git commit -m "Auto Commit"
 git push
 ```
-3. add PATH in ~/.bashrc
+3. add PATH in ~/.zsh
 ```
 vi ~/.zsh
 
