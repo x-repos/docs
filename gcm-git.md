@@ -7,14 +7,14 @@ chmod 777 ~/.bin/gcm
 ```
 2. add git command
 ```
-#!/usr/bin/bash
+#!/usr/bin/zsh
 git add .
 git commit -m "Auto Commit"
 git push
 ```
 3. add PATH in ~/.bashrc
 ```
-vi ~/.bashrc
+vi ~/.zsh
 
 # add PATH git
 export PATH="~/.bin:$PATH"
