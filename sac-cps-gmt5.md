@@ -32,7 +32,7 @@ sudo ./Setup LINUX6440
 sudo ./C
 ```
 
-5. download [full bin](https://github.com/x-repos/docs/tree/main/cps-bin) for cps 
+5. download [full bin](https://github.com/x-repos/docs/tree/main/bin-cps) for cps 
 6. Move all files from dowloaded cps-bin folder to /usr/local/PROGRAMS.330/bin
 ```
 cd ~download/cps-bin
