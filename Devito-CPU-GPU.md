@@ -12,7 +12,7 @@ import os
 os.environ["OMP_NUM_THREADS"] = "1"  # Replace '1' with your desired number of cores
 
 # CPU Configuration
-# configuration['platform'] = 'cpu64'
+configuration['platform'] = 'cpu64'
 configuration['compiler'] = 'gcc'
 configuration['language'] = 'openmp'  # Enable OpenMP parallelization
 os.environ["DEVITO_LOGGING"] = "DEBUG"
