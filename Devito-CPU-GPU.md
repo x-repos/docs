@@ -36,4 +36,6 @@ For more information, visit: https://github.com/devitocodes/devito/wiki/%5BManua
 
 ```bash
 ValueError: Illegal configuration parameter (platform, nvidia). Accepted: ['cpu64', 'cpu64-dummy', 'intel64', 'snb', 'ivb', 'hsw', 'bdw', 'knl', 'knl7210', 'skx', 'klx', 'clx', 'clk', 'spr', 'arm', 'graviton2', 'graviton3', 'graviton4', 'm1', 'm2', 'm3', 'amd', 'power8', 'power9', 'gpu', 'nvidiaX', 'amdgpuX', 'intelgpuX', 'pvc', 'intelgpuMAX', 'max1100', 'max1550']
+
+ValueError: Illegal configuration parameter (language, cc75). Accepted: [0, 1, 'C', 'openmp', 'openacc', 'cuda', 'hip', 'sycl']
 ```
