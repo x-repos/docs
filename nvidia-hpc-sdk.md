@@ -54,3 +54,5 @@ sudo apt install -y openmpi-bin libopenmpi-dev
 sudo apt install nvidia-cuda-toolkit
 ```
 Update .bashrc
+
+For other information, please ask ChatGPT
