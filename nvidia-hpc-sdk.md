@@ -51,6 +51,6 @@ Visit the official NVIDIA HPC SDK releases page to find a version compatible wit
 ## 3. Optional - HPC-SDK/CUDA on WSL
 ```bash
 sudo apt install -y openmpi-bin libopenmpi-dev
-sudo apt install nvcc
+sudo apt install nvidia-cuda-toolkit
 ```
 Update .bashrc
