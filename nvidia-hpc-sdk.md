@@ -47,3 +47,10 @@ Visit the official NVIDIA HPC SDK releases page to find a version compatible wit
 | **MPI**             | API/Model        | Standard API for distributed-memory parallelism using message passing.           | C, C++, Fortran          | Distributed systems        |
 
 ---
+
+## 3. Optional - HPC-SDK/CUDA on WSL
+```bash
+sudo apt install -y openmpi-bin libopenmpi-dev
+sudo apt install nvcc
+```
+Update .bashrc
