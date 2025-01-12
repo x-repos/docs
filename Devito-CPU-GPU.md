@@ -28,4 +28,8 @@ os.environ["DEVITO_LOGGING"] = "DEBUG"
 ```bash
 python3 examples/seismic/acoustic/acoustic_example.py -d 256 256 256 --tn 2000
 ```
+See GPU card performance:
+```bash
+watch -n 2 nvidia-smi
+```
 For more information, visit: https://github.com/devitocodes/devito/wiki/%5BManual%5D-Devito-on-Isambard-%5BCPU-GPU-ARM%5D.
