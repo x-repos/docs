@@ -33,3 +33,7 @@ See GPU card performance:
 watch -n 2 nvidia-smi
 ```
 For more information, visit: https://github.com/devitocodes/devito/wiki/%5BManual%5D-Devito-on-Isambard-%5BCPU-GPU-ARM%5D.
+
+```bash
+ValueError: Illegal configuration parameter (platform, nvidia). Accepted: ['cpu64', 'cpu64-dummy', 'intel64', 'snb', 'ivb', 'hsw', 'bdw', 'knl', 'knl7210', 'skx', 'klx', 'clx', 'clk', 'spr', 'arm', 'graviton2', 'graviton3', 'graviton4', 'm1', 'm2', 'm3', 'amd', 'power8', 'power9', 'gpu', 'nvidiaX', 'amdgpuX', 'intelgpuX', 'pvc', 'intelgpuMAX', 'max1100', 'max1550']
+```
