@@ -22,9 +22,10 @@ Output Example:
 |-----------------------------------------+------------------------+----------------------+
 ```
 
-### Step 2: Find a Compatible HPC SDK Version
+### Step 2: Find a Compatible HPC SDK Version bundle with CUDA version (12.4)
 Visit the official NVIDIA HPC SDK releases page to find a version compatible with your CUDA installation: https://developer.nvidia.com/nvidia-hpc-sdk-releases
 
+### Step 3: Update bashrc/zshrc
 
 ---
 
@@ -49,10 +50,18 @@ Visit the official NVIDIA HPC SDK releases page to find a version compatible wit
 ---
 
 ## 3. Optional - HPC-SDK/CUDA on WSL
-```bash
-sudo apt install -y openmpi-bin libopenmpi-dev
-sudo apt install nvidia-cuda-toolkit
+- Do symbolic link manually if:
 ```
-Update .bashrc
+Processing triggers for libc-bin (2.35-0ubuntu3.8) ...
+/sbin/ldconfig.real: /usr/lib/wsl/lib/libcuda.so.1 is not a symbolic link
+```
+```bash
+sudo ln -sf /usr/lib/wsl/lib/libcuda.so /usr/lib/wsl/lib/libcuda.so.1
+```
+Update .bashrc:
+```bash
+export PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/23.7/compilers/bin:$PATH
+export MANPATH=/opt/nvidia/hpc_sdk/Linux_x86_64/23.7/compilers/man:$MANPATH
+```
 
 For other information, please ask ChatGPT
