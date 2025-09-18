@@ -6,6 +6,10 @@ export CUDA_ARCH=75
   --with-cuda=cuda10
 make -j"$(nproc)"
 
+# Find missing lib
+find / -name "libcudart.so.12" 2>/dev/null
+
+
 # After Installation: Need to
 export LD_LIBRARY_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib64:$LD_LIBRARY_PATH
 
