@@ -6,4 +6,8 @@ export CUDA_ARCH=75
   --with-cuda=cuda10
 make -j"$(nproc)"
 
+# After Installation: Need to
 export LD_LIBRARY_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/24.5/cuda/12.4/targets/x86_64-linux/lib64:$LD_LIBRARY_PATH
+
+
+# The process are supported by Google Genimi
