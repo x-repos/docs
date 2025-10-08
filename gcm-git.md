@@ -1,21 +1,25 @@
 # **gcm short command**
-1. create the **gcm bash** file at ~/.bin
 ```
-mkdir ~/.bin
-vi ~/.bin/gcm
-chmod 777 ~/.bin/gcm
-```
-2. add git command
-```
-#!/usr/bin/zsh
+mkdir -p ~/.bin && \
+cat > ~/.bin/gcm <<'EOF'
+#!/usr/bin/bash
 git add .
 git commit -m "Auto Commit"
 git push
-```
-3. add PATH in ~/.zsh
-```
-vi ~/.zsh
+EOF
 
-# add PATH git
-export PATH="~/.bin:$PATH"
+chmod +x ~/.bin/gcm
+
+# Add to PATH if not already there
+if ! grep -q 'export PATH="$HOME/.bin:$PATH"' ~/.bashrc; then
+  echo '' >> ~/.bashrc
+  echo '# Add personal git helper scripts' >> ~/.bashrc
+  echo 'export PATH="$HOME/.bin:$PATH"' >> ~/.bashrc
+fi
+
+# Reload bash settings
+source ~/.bashrc
+
+echo "✅ gcm installed! You can now run 'gcm' inside any git repo."
+
 ```
