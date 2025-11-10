@@ -1,0 +1,66 @@
+SPECFEM2D GPU Installation Guide (NVIDIA HPC SDK + CUDA 13, RTX 5090)
+
+
+Directory Setup
+
+mkdir -p ~/Programs/specfem
+cp -r ~/Downloads/specfem2d ~/Programs/specfem/specfem2d-gpu
+cd ~/Programs/specfem/specfem2d-gpu
+
+
+Environment Setup
+
+export NVHPC=/opt/nvidia/hpc_sdk
+export HPCVER=$(ls $NVHPC/Linux_x86_64 | sort | tail -n 1)
+export PATH=$NVHPC/Linux_x86_64/$HPCVER/compilers/bin:$NVHPC/Linux_x86_64/$HPCVER/comm_libs/mpi/bin:$PATH
+export LD_LIBRARY_PATH=$NVHPC/Linux_x86_64/$HPCVER/comm_libs/mpi/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export CUDA_LIB=/usr/local/cuda/lib64
+
+
+Configure (GPU + MPI)
+
+make distclean >/dev/null 2>&1 || true
+
+./configure \
+  FC=nvfortran CC=nvc CXX=nvc++ \
+  MPIFC=mpif90 MPICC=mpicc MPICXX=mpicxx \
+  --with-mpi \
+  --with-cuda=cuda12 \
+  CUDA_LIB=${CUDA_LIB} \
+  USE_BUNDLED_SCOTCH=1
+
+
+Fix for Modern CUDA (deviceOverlap removal)
+Edit src/gpu/initialize_cuda.cu
+Remove all lines containing:
+
+if (deviceProp.deviceOverlap){ ... }
+else { ... }
+
+
+Keep canMapHostMemory and concurrentKernels lines.
+This prevents CUDA 13+ build errors.
+
+Build
+
+make -j"$(nproc)" all
+ls bin
+# expected: xmeshfem2D  xspecfem2D
+
+
+Enable GPU Mode
+
+nano DATA/Par_file
+
+
+Set:
+
+GPU_MODE = .true.
+
+
+Run Example
+
+./bin/xmeshfem2D
+./bin/xspecfem2D
+nvidia-smi
