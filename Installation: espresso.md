@@ -5,15 +5,14 @@ Download quantum espresso: https://www.quantum-espresso.org/quantum-espresso-v7-
 - QE version: 7.4.1
 - Cuda version: 13
 
-EXPORT ENV
+1. EXPORT ENV
 ```
 export FC=nvfortran
 export F90=nvfortran
 export CC=nvc
 export CXX=nvc++
 ```
-
-CONFIGURE:
+2. CONFIGURE:
 ```
 ./configure \
 FC=nvfortran \
@@ -25,11 +24,11 @@ CC=nvc \
 --disable-parallel \
 --prefix=/home/x/Programs/espresso_gpu
 ```
-INSTALL:
+3. INSTALL:
 ```
 make -j$(nproc) pw ph && make install
 ```
-TO RUN
+4. TO RUN
 ```
 mpirun -np 1 ~/Programs/espresso_gpu/bin/ph.x -in ./mgh2_ph.in > ./mgh2_ph.out
 ```
