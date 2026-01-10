@@ -2,6 +2,9 @@ Update: 01/09/2026
 
 Download quantum espresso: https://www.quantum-espresso.org/quantum-espresso-v7-4-1-available-on-the-download-page/
 
+- QE version: 7.4.1
+- Cuda version: 13
+
 EXPORT ENV
 ```
 export FC=nvfortran
