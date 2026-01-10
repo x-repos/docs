@@ -1,6 +1,7 @@
 Date: 01/09/2026
 
 JAX version: 0.6.0
+
 Cuda version: 12
 
 1. Create a Compatible Environment
