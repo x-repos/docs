@@ -10,7 +10,7 @@ Update: 01/09/2026
    ```
 2. Install JAX 0.6.0 (Plugin System)
    ```
-   pip install jax==0.6.0 jaxlib==0.6.0 jax-cuda12-plugin==0.6.0 jax-cuda12-pjrt==0.6.0\
+   pip install jax==0.6.0 jaxlib==0.6.0 jax-cuda12-plugin==0.6.0 jax-cuda12-pjrt==0.6.0
    pip install optax
    ```
 3. Install Supporting NVIDIA Libraries
