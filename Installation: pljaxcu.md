@@ -5,8 +5,8 @@ Update: 01/09/2026
 
 1. Create a Compatible Environment
    ```
-   conda create -n pljax python=3.11 -y
-   conda activate pljax
+   conda create -n pljaxcu python=3.11 -y
+   conda activate pljaxcu
    ```
 2. Install JAX 0.6.0 (Plugin System)
    ```
