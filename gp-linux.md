@@ -1,4 +1,4 @@
-- GlobalProtect
-- ```
-  sudo gpclient --fix-openssl connect globalprotect.mines.edu --default-browser
-  ```
+#GlobalProtect
+```
+sudo gpclient --fix-openssl connect globalprotect.mines.edu --default-browser
+```
