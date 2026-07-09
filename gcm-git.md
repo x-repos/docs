@@ -1,25 +1,34 @@
-# **gcm short command**
-```
-mkdir -p ~/.bin && \
-cat > ~/.bin/gcm <<'EOF'
-#!/usr/bin/bash
-git add .
-git commit -m "Auto Commit"
-git push
-EOF
+#!/usr/bin/env bash
+# gcm                -> stage everything, commit, push   (original behaviour)
+# gcm FILE [FILE...] -> stage ONLY those files, commit, push
+#
+# Named files are staged with -f, so gitignored artifacts (*.npz, *.npy, *.sh5)
+# can be shipped explicitly without relaxing .gitignore.
+set -euo pipefail
 
-chmod +x ~/.bin/gcm
-
-# Add to PATH if not already there
-if ! grep -q 'export PATH="$HOME/.bin:$PATH"' ~/.bashrc; then
-  echo '' >> ~/.bashrc
-  echo '# Add personal git helper scripts' >> ~/.bashrc
-  echo 'export PATH="$HOME/.bin:$PATH"' >> ~/.bashrc
+if [ "$#" -eq 0 ]; then
+    git add .
+    msg="Auto Commit"
+else
+    for f in "$@"; do
+        if [ ! -e "$f" ]; then
+            echo "gcm: no such file: $f" >&2
+            exit 1
+        fi
+    done
+    git add -f -- "$@"
+    msg="Add $(basename "$1")"
+    [ "$#" -gt 1 ] && msg="Add $# files"
 fi
 
-# Reload bash settings
-source ~/.bashrc
+# Nothing staged -> stop before making an empty commit.
+if git diff --cached --quiet; then
+    echo "gcm: nothing staged, nothing to do" >&2
+    exit 0
+fi
 
-echo "✅ gcm installed! You can now run 'gcm' inside any git repo."
+echo "gcm: committing:"
+git diff --cached --name-only | sed 's/^/  /'
 
-```
+git commit -m "$msg"
+git push
