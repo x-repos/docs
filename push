@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# push               -> stage everything, commit, push   (original behaviour)
+# push FILE [FILE...] -> stage ONLY those files, commit, push
+#
+# Named files are staged with -f, so gitignored artifacts (*.npz, *.npy, *.sh5)
+# can be shipped explicitly without relaxing .gitignore.
+set -euo pipefail
+
+if [ "$#" -eq 0 ]; then
+    git add .
+    msg="Auto Commit"
+else
+    for f in "$@"; do
+        if [ ! -e "$f" ]; then
+            echo "push: no such file: $f" >&2
+            exit 1
+        fi
+    done
+    git add -f -- "$@"
+    msg="Add $(basename "$1")"
+    [ "$#" -gt 1 ] && msg="Add $# files"
+fi
+
+# Nothing staged -> stop before making an empty commit.
+if git diff --cached --quiet; then
+    echo "push: nothing staged, nothing to do" >&2
+    exit 0
+fi
+
+echo "push: committing:"
+git diff --cached --name-only | sed 's/^/  /'
+
+git commit -m "$msg"
+
+# New branch with no upstream yet -> set it on first push.
+if git rev-parse --abbrev-ref --symbolic-full-name '@{u}' >/dev/null 2>&1; then
+    git push
+else
+    git push -u origin HEAD
+fi
